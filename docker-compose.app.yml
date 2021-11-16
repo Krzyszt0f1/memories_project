@@ -16,6 +16,8 @@ services:
     
   memories_server:
     build: ./server
+    depends_on:
+      - mongodb
     volumes: 
       - ./server:/index
     command: npm start
@@ -23,10 +25,12 @@ services:
       - 5000:5000
     environment:
       PORT: 5000
-      CONNECTION_URL: mongodb://localhost:27017/postmessages
+      CONNECTION_URL: mongodb://mongodb:27017/postmessages
     
   memories_client:
     build: ./client
+    depends_on:
+      - memories_server
     volumes:
       - ./client:/index
     ports:
