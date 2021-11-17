@@ -119,7 +119,7 @@ const Form = ({ currentId, setCurrentId }) => {
           type='submit'
           fullWidth
         >
-          Zatwierdz
+          Submit
         </Button>
         <Button
           variant='contained'
