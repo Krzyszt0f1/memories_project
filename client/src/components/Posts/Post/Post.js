@@ -1,12 +1,12 @@
-import React from 'react'
-import { makeStyles, Card, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core'
-
-import ThumpUpAltIcon from '@material-ui/icons/ThumbUpAlt'
+import { Button, Card, CardActions, CardContent, CardMedia, Typography,makeStyles } from '@material-ui/core'
 import DeleteIcon from '@material-ui/icons/Delete'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
+import ThumpUpAltIcon from '@material-ui/icons/ThumbUpAlt'
 import moment from 'moment'
-import { deletePost, likePost } from '../../../actions/posts'
+import React from 'react'
 import { useDispatch } from 'react-redux'
+
+import { deletePost, likePost } from '../../../actions/posts'
 
 const useStyles = makeStyles(() => ({
   media: {

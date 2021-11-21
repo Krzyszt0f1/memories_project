@@ -1,11 +1,11 @@
+import { AppBar, Container, Grid, Grow, Typography,makeStyles } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
-import { Container, AppBar, Typography, Grow, Grid, makeStyles } from '@material-ui/core'
 import { useDispatch } from 'react-redux'
 
 import { getPosts } from './actions/posts'
-import memories from './images/memories.png'
 import Form from './components/Form/Form'
 import Posts from './components/Posts/Posts'
+import memories from './images/memories.png'
 
 const useStyles = makeStyles((theme) => ({
   appBar: {

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { makeStyles, TextField, Button, Typography, Paper } from '@material-ui/core'
-
+import { Button, Paper,TextField,Typography,makeStyles } from '@material-ui/core'
+import React, { useEffect, useState } from 'react'
 import FileBase from 'react-file-base64'
 import { useDispatch, useSelector } from 'react-redux'
+
 import { createPost, updatePost } from '../../actions/posts'
 
 const useStyles = makeStyles((theme) => ({
